@@ -1,0 +1,24 @@
+.hit, .miss, .empty {
+  border: 1px solid #000;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.hit {
+  background: #f00;
+}
+
+.miss {
+  background: #ccc;
+}
+
+.game-row:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.hidden {
+  display: none;
+}
