@@ -16,7 +16,7 @@ React's [immutability helpers] aren't terrible, but Immutable.js is the better w
 
 	update(board, { [row]: { [col]: { $set: types.MISS}}});
 
-To toggle visibility between two React components, I rendered both onto the page and set the `display` property of each to be mutually exclusive of the another.  In this case, the performance gain was negligible, but this might be a useful pattern in the future.
+To toggle visibility between two React components, I rendered both onto the page and set the `display` property of each to be mutually exclusive of the other.  In this case, the performance gain was negligible, but this might be a useful pattern in the future.
 
 `Object.freeze()` can be used to create frozen enumerables in JS.
 
