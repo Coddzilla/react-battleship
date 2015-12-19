@@ -10,6 +10,18 @@ npm install
 npm start
 ```
 
+For now, ships are placed using the arrays in `index.js` and have the following constraints:
+
+ * Ships are always placed vertically
+ * Ships are 3 spaces long
+
+The following indicates that player 0 will have 3 ships, placed at `(0,0)`, `(1,1)`, and `(2,3)` and player 1 will have 3 ships, placed at `(0,0)`, `(1,1)`, and `(1,2)`.  If this isn't clear, take a look at the screenshot below.
+
+    const ships = [[ 0, 1, -1, 2, -1 ],
+                   [ 0, 1, 1, -1, -1 ]];
+
+
+
 ### Important details (things I learned while doing this):
 
 React's [immutability helpers] aren't terrible, but Immutable.js is the better way to go for larger projects.  To update a (computed, non-constant) index in an array, use ES6 [computed property names]:
